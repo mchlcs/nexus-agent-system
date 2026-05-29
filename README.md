@@ -73,12 +73,11 @@ Always start with Nexus. It reads `docs/progress.md`, decides which agent acts, 
 
 | Task type             | Agent sequence                        |
 |-----------------------|---------------------------------------|
-| New feature           | `spec → forge → verify → shield`      |
+| New feature           | `forge → shield → ledger`             |
 | Research question     | `scout → nexus → herald`              |
 | Security review       | `shield → ledger`                     |
-| Bug fix               | `forge → verify`                      |
-| Agent degraded        | `hill`                                |
-| Architectural change  | `shield → forge → guard`              |
+| Bug fix               | `forge → shield`                      |
+| Architectural change  | `shield → forge`                      |
 | End of every cycle    | `ledger` (no exceptions)              |
 
 ---
@@ -111,23 +110,6 @@ Human (final decision)
 
 ---
 
-## Vault SO Layer
-
-Beyond the 7 core agents, a self-maintenance layer handles system evolution:
-
-| Situation                        | Agent(s)                  |
-|----------------------------------|---------------------------|
-| New feature or agent             | `spec → forge → verify`   |
-| Degraded agent (drift detected)  | `hill`                    |
-| Surgical change to an agent      | `extend`                  |
-| Pre-deploy or critical change    | `guard + shield`          |
-| Docs vs behavior drift           | `review`                  |
-| Weekly article synthesis         | `ingest-report` (Fridays) |
-
-Vault SO agents are in [`/vault-so`](./vault-so/).
-
----
-
 ## File Structure
 
 ```
@@ -141,13 +123,6 @@ nexus-agent-system/
 │   ├── herald.md      — communicator, synthesis
 │   ├── ledger.md      — memory + auditor, terminal
 │   └── pixel.md       — visual designer, UI
-├── vault-so/
-│   ├── spec.md        — spec-driven development
-│   ├── hill.md        — degradation recovery
-│   ├── review.md      — code review + doc sync
-│   ├── extend.md      — targeted agent modifications
-│   ├── verify.md      — verification + testing
-│   └── guard.md       — pre-deploy security audit (OWASP LLM Top 10)
 └── docs/
     ├── constitution.md    — 6 principles, 4 absolute limits
     ├── standards.md       — code quality, output standards
