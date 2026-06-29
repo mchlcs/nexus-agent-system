@@ -1,5 +1,5 @@
 ---
-title: "Improve Agent — Lifecycle Loop"
+title: "improve-agent-lifecycle-loop"
 version: 1.0.0
 created: 2026-05-12
 audience: nexus (executa), todos os agentes (alvo)

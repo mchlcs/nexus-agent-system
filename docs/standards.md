@@ -1,5 +1,5 @@
 ---
-title: "Standards & Anti-Patterns"
+title: "standards-anti-patterns"
 version: 1.0.0
 created: 2026-05-12
 updated: 2026-05-12

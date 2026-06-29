@@ -1,5 +1,5 @@
 ---
-title: "Nexus System Constitution"
+title: "nexus-system-constitution"
 version: 1.0.0
 created: 2026-05-12
 status: active
