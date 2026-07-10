@@ -1,3 +1,13 @@
+# ⚠️ DEPRECATED — this repo is archived
+
+Consolidated into a single agents monorepo:
+
+**→ [phant0um/claude-agent-dev](https://github.com/phant0um/claude-agent-dev)** — updated version lives in [`nexus-agent-system/`](https://github.com/phant0um/claude-agent-dev/tree/main/nexus-agent-system). `/plugin` installable, MIT.
+
+Skills moved to [phant0um/claude-skills](https://github.com/phant0um/claude-skills).
+
+---
+
 # Nexus Agent System
 
 A 7-agent orchestration system for Claude Code, built around a governed constitution and cost-aware model routing.
